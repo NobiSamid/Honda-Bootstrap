@@ -3,3 +3,32 @@
 body {
     font-family: 'Varela Round', sans-serif;
 }
+
+.custom-button {
+    background-color: #E76F51;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 25px;
+}
+
+.banner {
+    background-color: #264653;
+}
+
+.underlined:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 25%;
+    position: relative;
+    background: rgb(172, 21, 21);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 50px;
+}
+
+.underlined:hover:after {
+    width: 100%;
+    left: 0;
+}
