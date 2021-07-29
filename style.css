@@ -1,3 +1,4 @@
+/*************** utility ******************/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body {
@@ -11,9 +12,33 @@ body {
     padding: 9px 25px;
 }
 
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+.fix {
+    overflow-x: hidden;
+}
+
+/******************** Banner **********************/
 .banner {
     background-color: #264653;
 }
+
+.banner p,
+.banner h1 {
+    color: white;
+}
+
+/****************** Featured bikes ***********************/
 
 .underlined:after {
     background: none repeat scroll 0 0 transparent;
@@ -33,13 +58,24 @@ body {
     left: 0;
 }
 
+/*************** My custom section ********************/
 .custom-btn {
     display: block;
-    width: 100%;
+    width: 80%;
     border: none;
     background-color: #04AA6D;
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
     text-align: center;
+}
+
+/**************** Footer ******************/
+footer ul {
+    list-style-type: none;
+}
+
+footer .row a {
+    text-decoration: none;
+    color: white;
 }
